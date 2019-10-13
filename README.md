@@ -1,2 +1,2 @@
 # aibhleog.github.io
-Currently my personal website is forwarded from this address. See my [personal website here!](tx.ag/taylor).
+Currently this URL forwards to my personal website (hosted on my university's server). See my [personal website here!](tx.ag/taylor).

@@ -1,2 +1,4 @@
 # aibhleog.github.io
-Currently this URL forwards to my personal website (hosted on my university's server). See my [personal website here!](http://people.physics.tamu.edu/aibhleog/).
+See my [personal website here!](http://aibhleog.github.io).
+
+Will eventually move to taylorhutchison.space (that URL currently forwards here).

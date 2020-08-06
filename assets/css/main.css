@@ -3431,13 +3431,13 @@ input, select, textarea {
 	}
 
 		#banner:after {
-			-moz-transition: opacity 0.5s ease;
-			-webkit-transition: opacity 0.5s ease;
-			-ms-transition: opacity 0.5s ease;
-			transition: opacity 0.5s ease;
-			-moz-transition-delay: 0s;
-			-webkit-transition-delay: 0s;
-			-ms-transition-delay: 0s;
+			-moz-transition: opacity 0s ease; /* set 0 by TAH */
+			-webkit-transition: opacity 0s ease; /* set 0 by TAH */
+			-ms-transition: opacity 0s ease; /* set 0 by TAH */
+			transition: opacity 0s ease; /* set 0 by TAH */
+			-moz-transition-delay: 0s; /* set 0 by TAH */
+			-webkit-transition-delay: 0s; /* set 0 by TAH */
+			-ms-transition-delay: 0s; /* set 0 by TAH */
 			transition-delay: 0s;
 			pointer-events: none;
 			background-color: #242943;
@@ -3459,8 +3459,8 @@ input, select, textarea {
 		#banner > .inner {
 			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
 			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
-			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
-			transition: opacity 0.3s ease, transform 0.1s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+			-ms-transition: opacity 0s ease, -ms-transform 0s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+			transition: opacity 0s ease, transform 0s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease; /* set 0 by TAH */
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;

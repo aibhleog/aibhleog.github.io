@@ -124,10 +124,26 @@ input, select, textarea {
 		line-height: 1.65;
 	}
 
+		/* added by TAH */
+		@media screen and (max-width: 2000px) {
+			
+			iframe {
+				width: 90%;
+				height: 750px;
+			}
+
+		}
+		
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
 				font-size: 14pt;
+			}
+			
+			/* added by TAH */
+			iframe {
+				width: 90%;
+				height: 600px;
 			}
 
 		}
@@ -137,6 +153,12 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			
+			/* added by TAH */
+			iframe {
+				width: 90%;
+				height: 500px;
+			}
 
 		}
 
@@ -144,6 +166,12 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 11pt;
+			}
+			
+			/* added by TAH */
+			iframe {
+				width: 80%;
+				height: 300px;
 			}
 
 		}

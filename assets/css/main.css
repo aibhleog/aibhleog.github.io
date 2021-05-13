@@ -1821,6 +1821,17 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	header.major.tay {
+		width: -moz-max-content;
+		width: -webkit-max-content;
+		width: -ms-max-content;
+		width: max-content;
+		margin-bottom: 2em;
+		text-align: center;
+		margin-left: auto;
+	    margin-right: auto;
+	}
+	
 	header.major {
 		width: -moz-max-content;
 		width: -webkit-max-content;
@@ -1858,6 +1869,7 @@ input, select, textarea {
 		body.is-ie header.major > h1:after {
 			max-width: 100% !important;
 		}
+		
 
 	@media screen and (max-width: 736px) {
 
@@ -3001,6 +3013,22 @@ input, select, textarea {
 			background-color: #2e3450;
 		}
 
+			/* TAYLOR MAIN IMAGE */
+			/* ----------------- */
+			.spotlights > section > .image.taylor {
+				background-position: center center;
+				background-size: cover;
+				border-radius: 0;
+				display: block;
+				position: relative;
+				padding: 2em 0em 1em 2em ;
+				left: 15%;
+				width: 80%;
+				margin-left: auto;
+	  		 	margin-right: auto;
+			}
+			/* ----------------- */
+			
 			.spotlights > section > .image {
 				background-position: center center;
 				background-size: cover;
@@ -3027,7 +3055,8 @@ input, select, textarea {
 					top: 0;
 					width: 100%;
 				}
-
+			
+			
 			.spotlights > section > .content {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -3055,6 +3084,7 @@ input, select, textarea {
 					width: 65em;
 				}
 
+
 			.spotlights > section:nth-child(2n) {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
@@ -3075,17 +3105,31 @@ input, select, textarea {
 			.spotlights > section > .image {
 				width: 40%;
 			}
+			
+			.spotlights > section > .image.taylor {
+				width: 40%;
+				padding: 3em 2em 2em 3em ;
+				left: 10%;
+			}
 
 			.spotlights > section > .content {
 				width: 60%;
 			}
 
 		}
+		
+		
 
 		@media screen and (max-width: 1280px) {
 
 			.spotlights > section > .image {
 				width: 45%;
+			}
+			
+			.spotlights > section > .image.taylor {
+				width: 40%;
+				padding: 3em 2em 2em 3em ;
+				left: 10%;
 			}
 
 			.spotlights > section > .content {
@@ -3103,11 +3147,18 @@ input, select, textarea {
 				.spotlights > section > .image {
 					width: 100%;
 				}
+				
+				.spotlights > section > .image.taylor {
+					width: 87%;
+					padding: 1em 0em 0em 5em ;
+					left: -5%;
+				}
 
 				.spotlights > section > .content {
 					padding: 4em 3em 2em 3em ;
 					width: 100%;
 				}
+				
 
 		}
 
@@ -3499,7 +3550,8 @@ input, select, textarea {
 			#banner > .inner .image {
 				display: none;
 			}
-
+			
+			
 			#banner > .inner header {
 				width: auto;
 			}

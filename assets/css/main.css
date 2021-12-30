@@ -4062,3 +4062,52 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+		
+
+
+/* ------------------------- */
+/* ACCORDION ADDED BY TAYLOR */
+/* ------------------------- */
+		
+		
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	color: #ffffff;
+	cursor: pointer;
+	padding: 20px 30px;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	line-height: 0.65;
+	font-size: 1.35em;
+	text-transform: initial;
+	display: inline-block; /* making width match text */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+	background-color: #2e3450;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	padding: 20px 18px;
+	display: none;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+

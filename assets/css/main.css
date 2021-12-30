@@ -2915,15 +2915,15 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #616160;
-			}
-
-			.tiles article:nth-child(6n - 1):before {
 				background-color: #B9AC6B;
 			}
 
+			.tiles article:nth-child(6n - 1):before {
+				background-color: #E79777;
+			}
+
 			.tiles article:nth-child(6n):before {
-				background-color: #5499C7;
+				background-color: #117A65;
 			}
 
 		@media screen and (max-width: 1280px) {

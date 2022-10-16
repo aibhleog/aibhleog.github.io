@@ -1,5 +1,8 @@
+
+document.write("<h1 class='strongTaylor'><strong><a href='index.html'>Taylor</a></strong></h1>");
+
 document.write("<ul class='links'>");
-document.write("<li><a href='index.html'>Home</a></li>");
+document.write("<li><a href='home.html'>Home</a></li>");
 document.write("<li><a href='aboutme.html'>About Me</a></li>");
 document.write("<li><a href='research.html'>Research</a></li>");
 document.write("<li><a href='github.html'>Github Projects</a></li>");

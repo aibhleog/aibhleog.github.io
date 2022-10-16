@@ -126,20 +126,20 @@ input, select, textarea {
 
 		/* added by TAH */
 		@media screen and (max-width: 2000px) {
-			
+
 			iframe {
 				width: 90%;
 				height: 750px;
 			}
 
 		}
-		
+
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
 				font-size: 14pt;
 			}
-			
+
 			/* added by TAH */
 			iframe {
 				width: 90%;
@@ -153,7 +153,7 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
-			
+
 			/* added by TAH */
 			iframe {
 				width: 90%;
@@ -167,7 +167,7 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
-			
+
 			/* added by TAH */
 			iframe {
 				width: 80%;
@@ -251,7 +251,7 @@ input, select, textarea {
     overflow: hidden;
     text-align: center;
 	}
-	
+
 	htay.before, htay.after {
 		position: absolute;
 		top: 51%;
@@ -261,7 +261,7 @@ input, select, textarea {
 		content: '/a0';
 		background-color: red;
 	}
-	
+
 	htay.before {
 		margin-left: -50%;
 		text-align: right;
@@ -333,7 +333,7 @@ input, select, textarea {
 		hr.major {
 			margin: 3em 0;
 		}
-		
+
 
 	.align-left {
 		text-align: left;
@@ -1831,7 +1831,7 @@ input, select, textarea {
 		margin-left: auto;
 	    margin-right: auto;
 	}
-	
+
 	header.major {
 		width: -moz-max-content;
 		width: -webkit-max-content;
@@ -1869,7 +1869,7 @@ input, select, textarea {
 		body.is-ie header.major > h1:after {
 			max-width: 100% !important;
 		}
-		
+
 
 	@media screen and (max-width: 736px) {
 
@@ -1878,7 +1878,7 @@ input, select, textarea {
 		}
 
 	}
-	
+
 
 /* Form */
 
@@ -2275,7 +2275,7 @@ input, select, textarea {
 			margin: 0 0 1.25em 1.5em;
 			top: 0.25em;
 		}
-		
+
 		.image.taylor-left {
 			max-width: 60%;
 		}
@@ -3028,7 +3028,7 @@ input, select, textarea {
 	  		 	margin-right: auto;
 			}
 			/* ----------------- */
-			
+
 			.spotlights > section > .image {
 				background-position: center center;
 				background-size: cover;
@@ -3055,8 +3055,8 @@ input, select, textarea {
 					top: 0;
 					width: 100%;
 				}
-			
-			
+
+
 			.spotlights > section > .content {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -3105,7 +3105,7 @@ input, select, textarea {
 			.spotlights > section > .image {
 				width: 40%;
 			}
-			
+
 			.spotlights > section > .image.taylor {
 				width: 40%;
 				padding: 3em 2em 2em 3em ;
@@ -3117,15 +3117,15 @@ input, select, textarea {
 			}
 
 		}
-		
-		
+
+
 
 		@media screen and (max-width: 1280px) {
 
 			.spotlights > section > .image {
 				width: 45%;
 			}
-			
+
 			.spotlights > section > .image.taylor {
 				width: 40%;
 				padding: 3em 2em 2em 3em ;
@@ -3147,7 +3147,7 @@ input, select, textarea {
 				.spotlights > section > .image {
 					width: 100%;
 				}
-				
+
 				.spotlights > section > .image.taylor {
 					width: 87%;
 					padding: 1em 0em 0em 5em ;
@@ -3158,7 +3158,7 @@ input, select, textarea {
 					padding: 4em 3em 2em 3em ;
 					width: 100%;
 				}
-				
+
 
 		}
 
@@ -3393,6 +3393,7 @@ input, select, textarea {
 				color: #87c5a4;
 			}
 
+
 		body.is-preload #header.alt {
 			opacity: 0;
 		}
@@ -3550,8 +3551,8 @@ input, select, textarea {
 			#banner > .inner .image {
 				display: none;
 			}
-			
-			
+
+
 			#banner > .inner header {
 				width: auto;
 			}
@@ -4062,14 +4063,14 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
-		
+
 
 
 /* ------------------------- */
 /* ACCORDION ADDED BY TAYLOR */
 /* ------------------------- */
-		
-		
+
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
 	color: #ffffff;
@@ -4103,6 +4104,70 @@ input, select, textarea {
 
 
 
+/* ------------------------------------ */
+/* absolute centering for new home page */
+/* ------------------------------------ */
+
+.absoluteCenter {
+ /* Must manually set width/height (originally 800,500) */
+ width:100em;
+ height:500px;
+
+ /* The magic centering code */
+ margin:auto;
+ position:absolute;
+ top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+ left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
+
+ /* Prevent div from overflowing main window */
+ max-width:100%;
+ max-height:100%;
+ overflow:auto;
+}
+
+/* IE 7 and Below */
+:first-child+html .absoluteCenter,
+* html .absoluteCenter {
+ /* Place code here to override all above values, and add IE friendly centering */
+}
+
+
+/* ------------------------- */
+/* making a logo for my name */
+/* ------------------------- */
+
+
+h1.strongTaylor strong {
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	background-color: #ffffff;
+	color: #242943;
+	display: inline-block;
+	line-height: 1.65em;
+	margin-right: 0.325em;
+	padding: 0 0.25em 0 0.405em;
+	box-shadow: none;
+	letter-spacing: 0.25em;
+	margin-bottom: 0;
+	text-transform: uppercase;
+
+}
+
+h1.strongTaylor span {
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	color: #fff;
+	display: inline-block;
+	line-height: 1.65em;
+	letter-spacing: 0.25em;
+	margin-bottom: 0;
+	text-transform: uppercase;
+
+}
 
 
 
@@ -4116,6 +4181,4 @@ input, select, textarea {
 
 
 
-
-
-
+/**/

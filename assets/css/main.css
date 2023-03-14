@@ -2269,13 +2269,25 @@ input, select, textarea {
 			.image.taylor-right img {
 				width: 100%;
 			}
+			
+			
+			/* TAH wants to make this figure become width of screen when mobile */
+			/*@media screen and (max-width: 480px) {
+				.image.taylor-right {
+					float: center;
+					margin: 0 0 2em 0;
+					width: 100%;
+				}
+			}*/
+			
 
 		.image.taylor-right {
 			float: right;
 			margin: 0 0 1.25em 1.5em;
 			top: 0.25em;
 		}
-
+		
+		
 		.image.taylor-left {
 			max-width: 60%;
 		}
@@ -4111,12 +4123,12 @@ input, select, textarea {
 .absoluteCenter {
  /* Must manually set width/height (originally 800,500) */
  width:100em;
- height:500px;
+ height:32em;
 
  /* The magic centering code */
  margin:auto;
  position:absolute;
- top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+ top:0;bottom:10em; /* Aligns Vertically - Remove for Horizontal Only */
  left:0;right:0; /* Aligns Horizontally - Remove for Vertical Only  */
 
  /* Prevent div from overflowing main window */

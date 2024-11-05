@@ -2301,6 +2301,9 @@ input, select, textarea {
 			margin: 0 1.5em 1.25em 0.5em;
 			top: 0.25em;
 		}
+		
+
+		
 
 /* List */
 
@@ -3614,6 +3617,24 @@ input, select, textarea {
 			#banner.major.alt {
 				opacity: 0.75;
 			}
+			
+		
+		/* TAH finding a way to make an alt major to show off photos */
+		#banner.majortaylor {
+			height: 75vh;
+			min-height: 30em;
+			max-height: 50em;
+			opacity: 1;
+			background-color: none;
+		}
+		
+			#banner > .majortaylor .image {
+/* 				display: none; */
+				align-items: center;
+				width: auto;
+			}
+
+			
 
 		#banner.style1:after {
 			background-color: #6fc3df;

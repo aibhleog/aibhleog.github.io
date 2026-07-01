@@ -4099,6 +4099,28 @@ input, select, textarea {
 
 
 
+
+
+
+
+/* ----------------------------------------- */
+/* MARKDOWN IMAGE ADJUSTMENT ADDED BY TAYLOR */
+/* ----------------------------------------- */
+
+/* for the full-width images (short but wide) */
+img[alt=png] { width: 100%; }
+
+/* for the <full-width images (tall!) */
+img[alt=pngTall] { width: 50%; }
+
+
+
+
+
+
+
+
+
 /* ------------------------- */
 /* ACCORDION ADDED BY TAYLOR */
 /* ------------------------- */

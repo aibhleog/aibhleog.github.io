@@ -19,7 +19,6 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style2">
 						<!--<a href="index.html" class="logo"><strong>Taylor</strong> <span>Hutchison</span></a> -->
 						<script type="text/javascript" src="includes/header_name.js"></script>
@@ -34,7 +33,6 @@
 					</nav>
 
 				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
 					<section id="banner" class="style3">
 						<div class="inner">
 							<span class="image">
@@ -43,25 +41,255 @@
 							<header class="major">
 								<h1>GitHub Projects</h1>
 							</header>
+							<p><a href="https://github.com/aibhleog" class="button primary" style="padding:0px 15px;font-size:1em;font-weight:600;height:3em;line-height:3em" target='_blank'>visit my GitHub</a></p>
 						</div>
 					</section>
+					
+
 
 				<!-- Main -->
-				<!-- One -->
+				<div id="main" class="alt">
 					<section id="one">
 						<div class="inner">
 							<header class="major">
-								<h3><font color="#589FCE">I *love* to code.</font></h3>
+								<h3>I *love* to code</h3>
 							</header>
-							<p>I'm so grateful that I get to do this as part of my research.  However, one of my hobbies is to code of up random things in my life that I've always been curious about -- some of them are useful for my research, such as the "Quick Tools for the Observational Astronomer," while others are purely a way for me to explore things and keep learning new ways to code.  </p>
+
+							<!--p><a href="https://github.com/aibhleog" class="button primary" target='_blank'>visit my GitHub</a></p-->
+
+							<p>I'm so grateful that I get to do this as part of my research.  Aside from my science, one of my hobbies is to code up random things in my life that I've always been curious about -- some of them are useful for my research, such as the "Quick Tools for the Observational Astronomer," while others are purely a way for me to explore things and keep learning new ways to code. On this page I share a few projects I've messed around with over the past several years, as well as tips and tricks I've learned along the way.  </p>
 							
-							<p><a href="https://github.com/aibhleog" class="button primary" target='_blank'>visit my GitHub</a></p>
 							
-							<p><strong><font color="#F4D03F">I'll describe a few of the projects below!</font></strong></p>
-							<hr class="major" />
-						</div>
+							
+							<!-- fun photo! -->
+							<section id="image">
+								<div class="inner">
+								<span class="image">
+									<img src="images/kittpeak-observing.png" alt=""
+											 style="width:100%" />
+								</span>
+								</div>
+							</section>
+							
+							
+							
+							
+							<hr/>
+							
+							<!-- hard lessons -->
+							<h3><button class='primary' style="background-color:#C19E10">hard lessons</button></h3>
+							<p/><p>
+							<!-- Before I describe some of the projects below, <strong><font color="#F4D03F">but first let's talk hard lessons.</font></strong>  -->
+							First things first. These are some notes for anyone who is a curious coder, who likes exploring new code &amp; packages like I do &mdash; some of these lessons I learned the hard way, so hopefully by sharing you can be spared some pain!  <strong>Click on the bullet points below to expand them for more information.</strong>
+							</p>
+
+							
+
+
+							<div class="row">
+							<div class="inner">
+								<ul>
+								
+								
+								<!-- starting small -->
+								<li>
+									<button class="accordion" style="padding:5px 14px;font-size:1em;font-weight:300;height:2.1em;box-shadow: inset 0 0 0 2px #F4D03F;color:#F4D03F">&mdash; LOOK AT THE DATA FIRST! &mdash;</button>
+									<div class="panel"> <!--style="display:inline-block"--> 
+										<ul class="alt">
+											<li>
+												<p>
+												
+								<strong><font color="#F4D03F">Seriously.</font></strong>  One of the first lessons I learned in graduate school (the hard way) was that you should ALWAYS inspect your data before doing anything with it.  Make sure your FITS images open fine and don't look weird, learn what the column names are in your csv table and if there are any header rows that you'll need to tell your code to ignore, make sure that you understand how to access the information in the data you have, etc.
+								
+								</br></br>
+								
+								It makes sense, right?  You need to know what you're working with, need to know if there's anything wrong or anything broken.  If someone shared the data with you, you need to know if there's anything you need clarification on don't understand sooner rather than later.  Looking at the data first will save you so many headaches in the future. Truly.
+								
+								<h3 style="color:#F4D03F">Ways to Look at Data</h3>
+								Below is an incomplete list of tools and/or software that we use in astronomy to look at different datasets, all linked to their respective web pages.
+								</br></br>
+								<ul>
+									<li><a href="https://sites.google.com/cfa.harvard.edu/saoimageds9/about" target="_blank" style="color:#589FCE">SAOimage DS9</a> &ndash; an astronomical imaging and data visualization GUI application. Can look at FITS images in single color, create RGB view from three FITS images, create regions that record the world coordinate system of the FITS files, calculate statistics, etc. If you take no other advice from me, astronomers of any flavor should <i>at least</i> install this app.</li>
+									<li><a href="https://www.mpe.mpg.de/~ott/QFitsView/" target="_blank" style="color:#589FCE">QFitsView</a> &ndash; similar in function to DS9 in function except it can also show 1D spectra underneath the 2D image for 3D spectroscopic data.</li>
+									<li><a href="https://www.star.bris.ac.uk/~mbt/topcat/" target="_blank" style="color:#589FCE">TOPCAT</a> &ndash; an interactive graphical viewer and editor for tabular data.  Incredibly useful for looking at catalogs of galaxies/stars/etc. (both FITS tables and regular csv-type tables), cross-matching between catalogs using astronometry, and more.</li>
+									<li><a href="https://www.python.org/" target="_blank" style="color:#589FCE">python</a> + <a href="https://matplotlib.org/" target="_blank" style="color:#589FCE">matplotlib</a> &ndash; python is a powerful programming language, one that the majority of astronomers use to conduct their science, with the matplotlib package serving as an invaluable tool for much of that visualization and exploration.  However, this combination can also be useful when first looking at the data as well!  For example, when exploring a catalog of targets you can plot various galaxy properties against each other or when accessing a 1D spectrum you can plot the spectrum to look for any discernible spectral features, etc.  For any of my code, you'll see so many examples of me visualizing things at each stage of analysis, both to help with workflow+analysis and also to make it easier to troubleshoot issues. </li>
+								</ul>
+							
+												</p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								
+								<!-- just adding a vertical space between buttons -->
+								<li style="list-style-type:none;margin:1em"></li>
+								
+
+								<!-- starting small -->
+								<li>
+									<button class="accordion" style="padding:5px 14px;font-size:1em;font-weight:300;height:2.1em;box-shadow: inset 0 0 0 2px #F4D03F;color:#F4D03F">&mdash; start small <i>THEN</i> scale up &mdash;</button>
+									<div class="panel"> <!--style="display:inline-block"--> 
+										<ul class="alt">
+											<li>
+												<p>
+							<strong><font color="#F4D03F">
+							TLDR: when writing code, it's a good idea to start with the smallest test case first &mdash; once you have a solid foundation and the code is doing what it should, ONLY THEN should be the time to start scaling up to your larger vision for the code
+							</font></strong>
+																					
+							</br></br>
+							
+							This may seem obvious but when it comes to any big task, project, goal, etc., it's always best to start small and work in bite-sized chunks.  Taking a big project and breaking it down into smaller and smaller parts ensures that you have a firm grasp of what you need to do, the steps you need to take, and a plan on how to do those steps.  			
+																		
+							</br></br>
+							
+							This is especially important when it comes to coding!  Imagine you need to analyze a lot of spectroscopic data as part of your research.  The code you need to write may include reading in various spectroscopy data files, exploring them, fitting the spectral emission features, and then plotting and printing all of the results.   That's a big task and it can be easy to fall into the trap of trying to write all that code at once &mdash; especially if you've done some/all of those tasks before in other scenarios.  However, that's the easiest way to create a series of small mistakes within your code that compound into large issues, incorrect calculations, or possibly the code just not working at all.
+							
+							</br></br>
+							
+							<i>Instead, if we were to start small and then scale up, it may look something like this:</i>
+							
+							<h3 style="color:#F4D03F">Starting Small</h3>
+							<ol>
+								<li>Chose and read in ONE spectrum from the larger sample of data.</li>
+								<li>Inspect the data you've read in, making sure you have everything you need.
+										<ul style="margin:1em"><li>Look at the file contents</li>
+										<li>Identify any header information about units, WCS, etc.</li>
+										<li>Assuming the spectrosopic data is a table, make sure you have columns of wavelength and flux</li>
+										<li>Make a quick plot to look at the spectrum and note if anything looks weird</li></ul>
+								</li>
+								<li>Identify the information you want to extract from the spectrum.</li>
+								<li>Set up and run fitting code to fit the strongest spectral feature from the list of spectral features you've identified; iterate until the fit results are working correctly.</li>
+								<li>Set up and run fitting code on the rest of the spectral features, ensuring all fit results are working correctly.</li>
+								<li>Calculate the information you want from the fit results.</li>
+								<li>Plot a final spectrum with fits and/or a table of the calculated results.</li>
+							</ol>
+											
+											
+							<h3 style="color:#F4D03F">Scaling Up</h3>
+							<ol>
+								<li>Start by scaling up one step &mdash; in this example, that could be reading in a second spectrum and running the full code to make sure it all works on the new data.  This is especially useful if the full suite of spectroscopic data come from different databases (and therefore may have different formats; i.e., table format, FITS table, etc.), where you may need to have some conditional flags that change a few ways that the data are read in or processed depending upon which database they came from.</li>
+								<li>Once all that works, assuming you've tested the code for each type of data (if the full dataset came from different databases), run the code on the full suite of spectra.</li>
+							</ol>
+											
+												</p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								
+								<!-- just adding a vertical space between buttons -->
+								<li style="list-style-type:none;margin:1em"></li>
+								
+
+								<!-- web scraping -->
+								<li>
+									<button class="accordion" style="padding:5px 14px;font-size:1em;font-weight:300;height:2.1em;box-shadow: inset 0 0 0 2px #F4D03F;color:#F4D03F">&mdash; web scraping // robots.txt &mdash;</button>
+									<div class="panel"> <!--style="display:inline-block"-->
+										<ul class="alt">
+											<li>
+												<p>
+							<strong><font color="#F4D03F">
+							TLDR: do some research FIRST and follow ethical best practices... before your IP gets blocked from a website because you accidentally DOS attacked it with your web scraping code.
+							</font></strong>
+																					
+							</br></br>
+							
+							Web "scraping" or "crawling" describes using code of some kind to explore &amp; extract information from a web page.  This concept has existed for almost as long as the internet has, which has lead to many interesting conversations about the ethics of web scraping: how to do so respectfully, legally, and how to avoid accidentally overloading a website with requests.
+							
+							</br></br>
+							
+							In 1994, early internet users and web-scraping robot developers created a set of rules and guidelines on how to operate on the web when using robots.  This consensus has since been referred to as the Robot Exclusion Protocal (or "robots.txt") and is a common standard used by web developers, and can be found on most websites on the internet.  The original page created by this group, outlining the protocal, can be found at <a href="https://www.robotstxt.org/orig.html" target="_blank">robotstxt.org/orig</a>. 
+							
+							</br></br>
+							
+							What is "robots.txt"?  Essentially, this protocal recommends every website have a file on the server hosting the site, where the contents of this file describe everywhere on the site that the website owner does NOT want robots to scrape information.  Everything in the "Disallow" section of a "robots.txt" file are places where no robot should visit.  This doesn't mean that all robots will respect the parameters in "robots.txt", but most should at the very least.  The most restrictive version of this file (that Disallows any access at all) looks like this:
+							
+							<pre><code>User-agent: *  # this applies to all robots
+Disallow: /  # all pages restricted, no robots allowed
+</code></pre>
+										
+							<!-- Quick Tips -->
+							<!-- resources -->
+							<h3 style="color:#F4D03F">Some Ethical Do's &amp; Dont's</h3>
+							<ul>
+								<li><strong style="color:#F4D03F">throttle your requests</strong> &mdash; 
+									 add delays or rate limits to your code, to avoid spamming a website with requests/tasks really quickly (which is essentially a DOS attack); especially important when you're in the testing or trouble-shooting phase where you're re-running code a bunch // this can be done even with just adding some seconds between each request/task!</li>	
+								<li><strong style="color:#F4D03F">check for APIs</strong> &mdash; 
+									some websites have or recommend an Application Programming Interface (API) for accessing their Allowed information, use these when available or applicable to your needs because they are literally there to be reliable, respectful, and helpful // <a href="https://www.geeksforgeeks.org/software-testing/what-is-an-api/" target="_blank">"what is an API?"</a>
+								<li><strong style="color:#F4D03F">start small, then scale up</strong> &mdash; 
+									before you go all out with your grand plan, it's a good idea to start small and test everything at that smaller scale in order to find bugs, fixes needed, and learn how to interface with that website; after that, then you can begin to scale up to the full coding program you want
+								<li><strong style="color:#F4D03F">stick to what you need</strong> &mdash; 
+									when starting out with web scraping, it can be fun to gather all the information possible just because you can; but that can build the number of requests to the website (risk of overloading) without actually helping with what you're trying to do with your code // keep it simple and stick to only what you need
+							</ul>
+										
+											
+											
+							<!-- resources -->
+							<h3>More on Robot Exclusion Protocal / "robots.txt"</h3>
+							<ul>
+								<li><a href="https://en.wikipedia.org/wiki/Robots.txt" target="_blank">robots.txt</a> // Wikipedia</li>
+								<li><a href="https://scrape.do/blog/robots-txt/" target="_blank">How to find the Robots.txt file?</a> // scrape.do</li>
+								<li><a href="https://info.arxiv.org/help/robots.html" target="_blank">Robots Beware</a> // an example of a Robot Exclusion Protocal with more information and background context, from arxiv.org (sidenote: this was the site I mentioned in the TLDR, thankfully it was only a 48hr ban for the first offense)</li>
+							</ul>
+									
+							<h3>Ethical Web Scraping Practices</h3>
+							<ul>		
+								<li><a href="https://www.openindex.io/blog/how-do-you-make-a-web-scraper-respectful-and-ethical/" target="_blank">"How do you make a web scraper respectful and ethical?"</a> // OpenIndex.io</li>							
+
+								<li><a href="https://www.datacamp.com/blog/ethical-web-scraping" target="_blank">"Ethical Web Scraping: Principles and Practices"</a> // DataCamp</li>
+								<li><a href="https://medium.com/tomtalkspython/ethical-web-scraping-with-beautifulsoup-best-practices-and-legal-considerations-fbb16d741378" target="_blank">"Ethical Web Scraping with BeautifulSoup: Best Practices and Legal Considerations"</a> // Medium:TomTalksPython</li>
+											
+								<li><a href="https://ethicrawl.github.io/ethicrawl/" target="_blank">Ethicrawl: a python library for ethical, professional-grade web crawling</a> (note: not yet vetted by Taylor)</li>
+								
+							</ul>
+											
+												</p>
+											</li>
+										</ul>
+									</div>
+							
+								</li>
+								</ul>
+							</div>
+							</div>							
+							
+							
+							
+							
+							
+						<hr/>
+					
+					
+						<h2 style="font-size:2em"><i>Some Example Projects:</i></h2>	
+							
+
+						</div>			
 					</section>
 
+					
+						<!-- quick tools -->
+						<section id="two" class="spotlights">
+							<section>
+								<div class="content" style="width:65%">
+									<div class="inner">
+										<header class="major">
+											<h3><font color="#F4D03F">Making Fake Data</font> &amp; Why You Should</font></h3>
+										</header>
+										<p>Believe it or not, this is a super useful skillset to keep in your toolbox &mdash; use it to explore a concept, learn how to use new software/coding package, test modeling code, and more!</p>
+										<ul class="actions">
+											<li><a href="how-to-make-fake-data.html" class="button primary fit" style="background-color:#F4D03F; color:#000">lemme show you</a></li>
+										</ul>
+									</div>
+								</div>
+								<a href="how-to-make-fake-data.html" class="image" style="width=35%">
+									<img src="code/making-fake-data/output_27_0.png" alt="" data-position="center center" />
+								</a>
+							</section>
+						</section>
+						
+						<hr/>
+					
+					
 					<!-- quick tools -->
 						<section id="two" class="spotlights">
 							<section>
@@ -182,7 +410,7 @@
 										<header class="major">
 											<h3>PhD <font color="#F4D03F">Writing</font> Prompts</h3>
 										</header>
-										<p>In grad school, after a writing workshop that a colleague and I attended, I had wanted to make a list of writing prompts to help me overcome my scientific writers block.  Using some of the prompts that were given at that workshop and then scouring the internet for more exmaples, I compiled a list and wrote a quick script to randomly print one.  Integrating this script as an alias in my terminal means that I can type "writing" in my terminal and get a prompt!<p>
+										<p>In grad school, after a writing workshop that a colleague and I attended, I had wanted to make a list of writing prompts to help me overcome my scientific writers block.  Using some of the prompts that were given at that workshop and then scouring the internet for more examples, I compiled a list and wrote a quick script to randomly print one.  Integrating this script as an alias in my terminal means that I can type "writing" in my terminal and get a prompt!<p>
 										<ul class="actions">
 											<li><a href="https://github.com/aibhleog/phd-writing-prompts" class="button" target='_blank'>see code</a></li>
 										</ul>
@@ -214,6 +442,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- my own script -->
+			<script type="text/javascript" src="includes/dropdown.js"></script>
 
 	</body>
 </html>
